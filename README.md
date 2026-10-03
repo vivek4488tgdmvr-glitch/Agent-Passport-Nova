@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Agent Passport (Nova)
 
 Portable AI-agent identity, behavior contracts, security controls, and verification for the **Agent Passport Challenge (HiDevs x Lyzr)**.
@@ -611,3 +612,6 @@ python examples/day32_checkpoints.py
 ```
 
 The run produces `opengap-checkpoint-report.json` and requires all 3 local checkpoints to pass. This is a compatibility profile, not a claim about the challenge's private validator implementation.
+
+## FSD-3
+Third semester
