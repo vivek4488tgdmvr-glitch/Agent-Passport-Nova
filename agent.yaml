@@ -1,4 +1,4 @@
+spec_version: "0.1.0"
 name: "nova"
 version: "1.0.0"
 description: "A portable and verifiable AI agent."
-spec: "0.1.0"
