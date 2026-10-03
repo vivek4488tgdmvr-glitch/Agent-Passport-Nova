@@ -1,4 +1,7 @@
 name: "Nova"
+
+version: "1.0.0"
+spec: "0.1.0"
 spec: "0.1.0"
 agent:
   id: "nova"
