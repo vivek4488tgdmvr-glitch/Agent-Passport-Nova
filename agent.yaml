@@ -1,6 +1,7 @@
 name: "Nova"
 version: "1.0.0"
 spec: "0.1.0"
+description: "A portable and verifiable AI agent."
 agent:
   id: "nova"
   name: "Nova"
