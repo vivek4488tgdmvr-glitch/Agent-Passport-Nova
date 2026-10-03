@@ -1,0 +1,19 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                          [100%][0m
+[32m[32m[1m46 passed[0m, [33m1 skipped[0m[32m in 0.32s[0m[0m
+
+VERSIONING DEMO
+=== DAY 13: PASSPORT VERSIONING ===
+PASSPORT DIFF: 1.0.0 → 1.1.0
+--------------------------------------------------------
++ identity.capabilities[]
+    value: "web_search"
+~ model.model
+    before: "any"
+    after:  "new-model"
++ runtime.compatible[]
+    value: "langchain"
++ tools[]
+    value: {"description": "search the web", "name": "web_search"}
+
+Summary: {'added': 3, 'removed': 0, 'modified': 1}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "repository": "/home/claude/proj",
+  "passed": 3,
+  "total": 3,
+  "checkpoints": [
+    {
+      "id": "01",
+      "name": "VALIDATE",
+      "status": "PASS",
+      "detail": "spec 0.1.0; agent nova v1.0.0"
+    },
+    {
+      "id": "02",
+      "name": "EXPLAIN",
+      "status": "PASS",
+      "detail": "2554 characters; decisions, data, and limitations documented"
+    },
+    {
+      "id": "03",
+      "name": "PASSPORT EVIDENCE",
+      "status": "PASS",
+      "detail": "Passport present; signed travel evidence cryptographically verified and bound to passport.yaml"
+    }
+  ]
+}

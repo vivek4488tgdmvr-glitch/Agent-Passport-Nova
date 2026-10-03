@@ -1,0 +1,20 @@
+{
+  "name": "Agent Passport Security Center",
+  "status": "LOCAL_EVIDENCE",
+  "principle": "defense-in-depth",
+  "controls": [
+    "input_validation",
+    "rate_limiting",
+    "replay_protection",
+    "signature_verification",
+    "capability_authorization",
+    "delegation_scoping",
+    "tool_sandboxing",
+    "secret_redaction",
+    "tamper_evident_audit",
+    "cryptographic_evidence",
+    "registry_verification",
+    "red_team_testing"
+  ],
+  "external_validator_claimed": false
+}

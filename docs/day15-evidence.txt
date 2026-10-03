@@ -1,0 +1,17 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m              [100%][0m
+[32m[32m[1m58 passed[0m, [33m1 skipped[0m[32m in 0.60s[0m[0m
+
+PORTABLE TOOL DEMO
+=== DAY 15: PORTABLE TOOLS ===
+Contract verification: PASS ✓
+
+Native runtime:
+calculator(2, 3) = 5
+
+Portable host:
+calculator(2, 3) = 5
+
+Same portable contract ✓
+Different runtime bindings ✓
+Tool can travel with the agent ✓

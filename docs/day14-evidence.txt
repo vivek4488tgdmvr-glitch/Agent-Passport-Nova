@@ -1,0 +1,24 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                    [100%][0m
+[32m[32m[1m52 passed[0m, [33m1 skipped[0m[32m in 0.33s[0m[0m
+
+NEGOTIATION DEMO
+=== DAY 14: CAPABILITY NEGOTIATION ===
+
+[1] Capable runtime
+CAPABILITY NEGOTIATION
+------------------------------------------------
+Status: COMPATIBLE
+Required: reasoning, structured_output, tool_use, web_search
+Provided: reasoning, structured_output, tool_use, web_search
+✓ Target runtime satisfies Passport requirements.
+
+[2] Limited runtime
+CAPABILITY NEGOTIATION
+------------------------------------------------
+Status: INCOMPATIBLE
+Required: reasoning, structured_output, tool_use, web_search
+Provided: reasoning, structured_output
+Missing:
+  ✗ tool_use
+  ✗ web_search

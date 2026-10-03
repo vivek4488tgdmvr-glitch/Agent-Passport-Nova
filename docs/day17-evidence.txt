@@ -1,0 +1,25 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 96%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                      [100%][0m
+[32m[32m[1m74 passed[0m, [33m1 skipped[0m[32m in 0.67s[0m[0m
+
+CONFORMANCE DEMO
+=== DAY 17: BEHAVIORAL CONFORMANCE ===
+BEHAVIORAL CONFORMANCE REPORT
+------------------------------
+Status: PASS
+Cases: 3
+Passed: 3
+Failed: 0
+✓ structured-output: PASS
+    Behavior matched contract.
+✓ output-is-object: PASS
+    Behavior matched contract.
+✓ invalid-input: PASS
+    Expected error observed.
+
+Evidence:
+✓ Declared behavior tested
+✓ Output contract tested
+✓ Failure behavior tested
+✓ Agent behavior can be verified before migration

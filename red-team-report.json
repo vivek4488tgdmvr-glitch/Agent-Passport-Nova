@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "passed": 11,
+  "total": 11,
+  "probes": [
+    {
+      "name": "Malformed principal",
+      "passed": true,
+      "detail": "path-like identity rejected"
+    },
+    {
+      "name": "Oversized request",
+      "passed": true,
+      "detail": "request-size limit enforced"
+    },
+    {
+      "name": "Rate-limit flood",
+      "passed": true,
+      "detail": "third request blocked"
+    },
+    {
+      "name": "Replay request",
+      "passed": true,
+      "detail": "duplicate nonce rejected"
+    },
+    {
+      "name": "Privilege escalation",
+      "passed": true,
+      "detail": "denied permission overrides allowed permission"
+    },
+    {
+      "name": "Credential leakage",
+      "passed": true,
+      "detail": "credential fields redacted"
+    },
+    {
+      "name": "Audit integrity",
+      "passed": true,
+      "detail": "hash chain verifies and secrets are absent"
+    },
+    {
+      "name": "Audit tampering",
+      "passed": true,
+      "detail": "modified historical event detected"
+    },
+    {
+      "name": "Sandbox timeout",
+      "passed": true,
+      "detail": "runaway handler terminated"
+    },
+    {
+      "name": "Unauthorized tool",
+      "passed": true,
+      "detail": "tool blocked before handler execution"
+    },
+    {
+      "name": "Evidence chain",
+      "passed": true,
+      "detail": "red-team result can be backed by a valid audit chain"
+    }
+  ]
+}

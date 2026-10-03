@@ -1,0 +1,20 @@
+{
+  "release": "day40-final-security",
+  "security_mode": "local_non_destructive_adversarial_review",
+  "external_targets": false,
+  "unhackable_claim": false,
+  "day39_fixes_retained": true,
+  "trust_boundaries": [
+    "passport",
+    "registry",
+    "delegation",
+    "authorization",
+    "tools",
+    "sandbox",
+    "evidence",
+    "audit",
+    "dashboard",
+    "secrets"
+  ],
+  "residual_risks_documented": true
+}

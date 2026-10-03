@@ -1,0 +1,9 @@
+{
+  "release": "day38-final-showcase",
+  "purpose": "judge-ready Agent Passport showcase",
+  "security_claim": "defense-in-depth; not unhackable",
+  "external_validator_claimed": false,
+  "showcase": "examples/showcase.py",
+  "security_center": "examples/security_center.py",
+  "checklist": "FINAL_SUBMISSION_CHECKLIST_DAY38.md"
+}

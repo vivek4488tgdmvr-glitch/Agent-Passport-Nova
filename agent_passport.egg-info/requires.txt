@@ -1,0 +1,11 @@
+pydantic<3.0,>=2.0
+PyYAML>=6.0
+
+[dev]
+pytest>=8.0
+
+[langchain]
+langchain-core<2.0,>=1.0
+
+[security]
+cryptography<47,>=42

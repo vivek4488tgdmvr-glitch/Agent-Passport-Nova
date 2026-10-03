@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "name": "Full test suite with zero skips",
+      "passed": true,
+      "detail": "144 passed, 8 warnings in 2.87s"
+    },
+    {
+      "name": "Safe red-team suite",
+      "passed": true,
+      "detail": "11/11 local probes passed"
+    },
+    {
+      "name": "Encrypted key-management module",
+      "passed": true,
+      "detail": "encrypted keystore implementation present"
+    },
+    {
+      "name": "Sandbox enforcement module",
+      "passed": true,
+      "detail": "isolated tool execution controls present"
+    },
+    {
+      "name": "Security hardening module",
+      "passed": true,
+      "detail": "request validation, rate limiting, replay protection and audit chain present"
+    },
+    {
+      "name": "Signed evidence verification",
+      "passed": true,
+      "detail": "signed evidence verification: PASS"
+    },
+    {
+      "name": "No private-key material in release tree",
+      "passed": true,
+      "detail": "no private-key material files found"
+    },
+    {
+      "name": "No high-confidence live secrets in application/config",
+      "passed": true,
+      "detail": "no high-confidence live-secret patterns found in application/config files"
+    },
+    {
+      "name": "Cryptography dependency declared",
+      "passed": true,
+      "detail": "cryptography security extra declared"
+    },
+    {
+      "name": "Release artifacts present",
+      "passed": true,
+      "detail": "all release artifacts present"
+    }
+  ]
+}

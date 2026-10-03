@@ -1,0 +1,27 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 80%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                       [100%][0m
+[32m[32m[1m89 passed[0m, [33m1 skipped[0m[32m in 0.34s[0m[0m
+
+PASSPORT TRAVEL DEMO
+=== DAY 20: PASSPORT TRAVEL ===
+
+AGENT PASSPORT — TRAVEL EVIDENCE
+=================================
+FINAL STATUS: PASS
+Steps: 10/10 passed
+
+01. ✓ AGENT IDENTITY — Nova v1.0.0 (nova)
+02. ✓ PASSPORT TRUST — signed Passport + active registry baseline available
+03. ✓ CAPABILITY NEGOTIATION — target runtime satisfies Passport requirements
+04. ✓ PORTABLE TOOL CONTRACT — calculator contract verified across runtime binding
+05. ✓ SECURITY POLICY — safe action allowed; shell execution denied
+06. ✓ BEHAVIORAL CONFORMANCE — 2/2 cases passed
+07. ✓ MULTI-AGENT DELEGATION — Scout accepted only the requested web_search scope
+08. ✓ RUNTIME MIGRATION — identity preserved after portable-host transfer
+09. ✓ POST-MIGRATION VERIFICATION — behavior remains conformant after transfer
+10. ✓ PASSPORT TRAVEL — agent completed the complete trust pipeline
+
+Evidence file: passport-travel-evidence.json
+
+PASSPORT TRAVEL ✓

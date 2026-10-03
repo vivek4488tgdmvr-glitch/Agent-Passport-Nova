@@ -1,0 +1,131 @@
+{
+  "credentials_embedded": false,
+  "day": 33,
+  "frameworks": {
+    "claude-code": {
+      "artifact": {
+        "adapter_version": "1.0",
+        "agent": {
+          "id": "nova",
+          "name": "Nova",
+          "version": "1.0.0"
+        },
+        "capabilities": [
+          "reasoning",
+          "structured_output",
+          "tool_use"
+        ],
+        "entrypoint": "agent",
+        "instructions": "Operate Nova under the Agent Passport contract.",
+        "schema": "opengap-framework-export/1.0",
+        "source": "agent-passport",
+        "target": "Claude Code",
+        "tools": []
+      },
+      "verified": true,
+      "visa": {
+        "contract_version": "1.0",
+        "framework": "claude-code",
+        "passport_agent_id": "nova",
+        "passport_version": "1.0.0",
+        "status": "ISSUED",
+        "visa_id": "visa-claude-code-nova-83547afa4b04f1517f01"
+      }
+    },
+    "crewai": {
+      "artifact": {
+        "adapter_version": "1.0",
+        "agent": {
+          "id": "nova",
+          "name": "Nova",
+          "version": "1.0.0"
+        },
+        "capabilities": [
+          "reasoning",
+          "structured_output",
+          "tool_use"
+        ],
+        "entrypoint": "agent",
+        "goal": "Preserve the Agent Passport identity and behavior contract.",
+        "role": "Nova",
+        "schema": "opengap-framework-export/1.0",
+        "source": "agent-passport",
+        "target": "CrewAI",
+        "tools": []
+      },
+      "verified": true,
+      "visa": {
+        "contract_version": "1.0",
+        "framework": "crewai",
+        "passport_agent_id": "nova",
+        "passport_version": "1.0.0",
+        "status": "ISSUED",
+        "visa_id": "visa-crewai-nova-6aa7546979cd91e07116"
+      }
+    },
+    "lyzr": {
+      "artifact": {
+        "adapter_version": "1.0",
+        "agent": {
+          "id": "nova",
+          "name": "Nova",
+          "version": "1.0.0"
+        },
+        "agent_type": "passport-compatible",
+        "capabilities": [
+          "reasoning",
+          "structured_output",
+          "tool_use"
+        ],
+        "entrypoint": "agent",
+        "schema": "opengap-framework-export/1.0",
+        "source": "agent-passport",
+        "target": "Lyzr",
+        "tools": []
+      },
+      "verified": true,
+      "visa": {
+        "contract_version": "1.0",
+        "framework": "lyzr",
+        "passport_agent_id": "nova",
+        "passport_version": "1.0.0",
+        "status": "ISSUED",
+        "visa_id": "visa-lyzr-nova-e5d978c882e1a4d2664c"
+      }
+    },
+    "openai-sdk": {
+      "artifact": {
+        "adapter_version": "1.0",
+        "agent": {
+          "id": "nova",
+          "name": "Nova",
+          "version": "1.0.0"
+        },
+        "capabilities": [
+          "reasoning",
+          "structured_output",
+          "tool_use"
+        ],
+        "entrypoint": "responses",
+        "instruction": "Run passport agent nova through an OpenAI-compatible host.",
+        "schema": "opengap-framework-export/1.0",
+        "source": "agent-passport",
+        "target": "OpenAI SDK",
+        "tools": []
+      },
+      "verified": true,
+      "visa": {
+        "contract_version": "1.0",
+        "framework": "openai-sdk",
+        "passport_agent_id": "nova",
+        "passport_version": "1.0.0",
+        "status": "ISSUED",
+        "visa_id": "visa-openai-sdk-nova-07c02dee383777422d9c"
+      }
+    }
+  },
+  "note": "Compatibility/export contracts based on framework names visible in the public challenge UI; not a claim of official SDK exports or private HiDevs validator equivalence.",
+  "passed": 4,
+  "status": "PASS",
+  "total": 4
+}

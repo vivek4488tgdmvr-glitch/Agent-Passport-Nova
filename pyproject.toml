@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-passport"
+version = "1.0.34"
+description = "Portable AI-agent identity, contracts, migration, and verification."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.0,<3.0",
+  "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+security = ["cryptography>=42,<47"]
+langchain = ["langchain-core>=1.0,<2.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+agent-passport = "agent_passport.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

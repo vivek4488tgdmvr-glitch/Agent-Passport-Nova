@@ -1,0 +1,62 @@
+passport:
+  version: "1.5"
+
+agent:
+  id: "nova"
+  name: "Nova"
+  version: "1.0.0"
+  description: "A portable research-oriented AI agent."
+
+identity:
+  capabilities:
+    - reasoning
+    - structured_output
+    - tool_use
+
+behavior:
+  input:
+    type: "text"
+  output:
+    type: "json"
+
+
+tools:
+  - name: "multiply"
+    description: "Multiplies two integers."
+    input_schema:
+      type: "object"
+      properties:
+        a:
+          type: "integer"
+        b:
+          type: "integer"
+      required:
+        - "a"
+        - "b"
+    output_type: "integer"
+
+model:
+  interface_version: "1.0"
+  provider: "any"
+  model: "any"
+
+runtime:
+  api_version: "1.0"
+  compatible:
+    - "native"
+    - "mock-framework"
+    - "model-runtime"
+    - "portable-host"
+    - "external-framework"
+    - "langchain"
+
+verification:
+  required:
+    - "schema"
+    - "identity"
+    - "behavior"
+    - "tools"
+    - "runtime"
+    - "model_interface"
+    - "migration"
+    - "framework_adapter"

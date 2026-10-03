@@ -1,0 +1,804 @@
+{
+  "release": "agent-passport-day35-final",
+  "status": "READY_FOR_SUBMISSION",
+  "tests": {
+    "passed": 144,
+    "failed": 0,
+    "skipped": 0
+  },
+  "security_note": "Defense-in-depth; not claimed unhackable.",
+  "files": [
+    {
+      "path": "DAY31_RELEASE_NOTES.md",
+      "sha256": "1e9a4a684d9ce2288f1275b11c47b72fd0157d0285b1f30ec790eeba3152d42e"
+    },
+    {
+      "path": "DAY33_RELEASE_NOTES.md",
+      "sha256": "d15021056ccde50d643cc3fd8d3297b898d636828cead43d5a1e792a4bb219c3"
+    },
+    {
+      "path": "DAY34_RELEASE_NOTES.md",
+      "sha256": "552897bcc504f571f8198f602ebe1211788dc476ffc673893629dfbf3f8e4727"
+    },
+    {
+      "path": "DAY35_RELEASE_NOTES.md",
+      "sha256": "433803637be4714dfb954a4a5ed9d3a2c1bc91461162412fc475d901ea8efc07"
+    },
+    {
+      "path": "EXPLAINABILITY.md",
+      "sha256": "25cc4b5895de87785089ca6be7b825060b1935c401cda7d90593915721ce96b8"
+    },
+    {
+      "path": "FINAL_SUBMISSION_CHECKLIST.md",
+      "sha256": "48c7d3bb0afb84e0f33cb7e551d6b0471a0a170e18d1a7ff9d7305402a4978c7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "23934271987ed79fd337de5c1bc263d2810a0a21b1a3e6bacc2a2d436e600b00"
+    },
+    {
+      "path": "SECURITY_AUDIT.md",
+      "sha256": "af4cea996b4be74066c76e01f964402c2618e18d801947553b939d38387dc078"
+    },
+    {
+      "path": "SECURITY_CONTROL_MATRIX.md",
+      "sha256": "05d6c4cc2e3c6530e8d0623476e3f71add6ebec033baa94621a12006aed168bd"
+    },
+    {
+      "path": "SECURITY_THREAT_MODEL.md",
+      "sha256": "bca11674cb1a89cd77bbbe04a204b4bf910140f2f88076ee20aeab2ff8b6a1b3"
+    },
+    {
+      "path": "SUBMISSION_CHECKLIST.md",
+      "sha256": "ad6440bfdd7b02a161edb8b47740c37d1eeca7aaf8e94c97e46a86a81697e535"
+    },
+    {
+      "path": "agent.yaml",
+      "sha256": "3e1d6f9a4d4a01ca0614568efa568723e408545c5817162fd60b4f9ca32732c0"
+    },
+    {
+      "path": "agent_passport/__init__.py",
+      "sha256": "a01ad0a0fccaba771f9b600af238cf011401edbfbe4186a9e06744d46b51c492"
+    },
+    {
+      "path": "agent_passport/adapters/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "agent_passport/adapters/migratable.py",
+      "sha256": "51bfec5f0086ab5a5f07824fe7d1afa53393c14707e0edf38c757cf68e4a333b"
+    },
+    {
+      "path": "agent_passport/adapters/mock_framework.py",
+      "sha256": "d41f7a36ddfea91f7ca2a2e6f803e0872795ccfc50338620feeed7d26e15e9e3"
+    },
+    {
+      "path": "agent_passport/adapters/model_runtime.py",
+      "sha256": "d2a0b65792a776867a6c54d585304b465a4696c756479062417045a3c0aa68ec"
+    },
+    {
+      "path": "agent_passport/adapters/native.py",
+      "sha256": "babf6b45ae84b567164dd90f39179a66fbb6924c39b8b8f50b294ba0ed5ea0a1"
+    },
+    {
+      "path": "agent_passport/cli.py",
+      "sha256": "9b6ff5f7c2abcd0af861aa9594ccd1f579cc995abaf49953d1dab6341a0084f1"
+    },
+    {
+      "path": "agent_passport/conformance/__init__.py",
+      "sha256": "e95658ac85dcf3186fc390e6a59bd7188ff3387a605318f63ef3a2e9253471b6"
+    },
+    {
+      "path": "agent_passport/conformance/models.py",
+      "sha256": "0eab12937a8a43d1e39d0d28a8b4b776e1fad92e32be351f6e1a4df9a2af4f0b"
+    },
+    {
+      "path": "agent_passport/conformance/runner.py",
+      "sha256": "ccf4ab76b83c36961cd5905ca95beba6bda642b824d15bf9c9230137511c627d"
+    },
+    {
+      "path": "agent_passport/core/__init__.py",
+      "sha256": "e10d7519ad142edbe9708a4be00afe27e8510f42090e7463430102c32b948717"
+    },
+    {
+      "path": "agent_passport/core/agent.py",
+      "sha256": "11728ab2d9ccd01c8f6bf2b028e99aa57327e8dc33ebfa3261e8c8500e14924e"
+    },
+    {
+      "path": "agent_passport/core/contracts.py",
+      "sha256": "8b8f92cb079700b4fb8c44ab034d3315fc98714f0bb89b181cadf4495cf3a189"
+    },
+    {
+      "path": "agent_passport/core/llm_agent.py",
+      "sha256": "c1078fffdc3634f0ec211a059b01072184ae65109c741038064c135f7b40cdf1"
+    },
+    {
+      "path": "agent_passport/dashboard/__init__.py",
+      "sha256": "aa5c0bb6148644701b7bb29b6b94878d3ad12bc1eb903734f3b717b7bf2330b4"
+    },
+    {
+      "path": "agent_passport/dashboard/server.py",
+      "sha256": "af06d405955551f170263fce601633e7d88df3d34b4a67c744d333b5660940bc"
+    },
+    {
+      "path": "agent_passport/delegation/__init__.py",
+      "sha256": "f70167529486382e7e091f6f526c6917d9ea9f17aa51828818eaea21edca14dc"
+    },
+    {
+      "path": "agent_passport/delegation/engine.py",
+      "sha256": "175f2fcd31bbf117c70f9ae3f06fc0d8f7a1dab2c699f42cec178f9f3f86d02a"
+    },
+    {
+      "path": "agent_passport/delegation/models.py",
+      "sha256": "38eab90bf4d95d502b4612421eca1862822eabe51e4d4162bdff71e835cba4b7"
+    },
+    {
+      "path": "agent_passport/delegation/token.py",
+      "sha256": "42c8b93088c015a6725b2c706f6b187dae6c9cb7a399f893984e2d385869fcc6"
+    },
+    {
+      "path": "agent_passport/frameworks/__init__.py",
+      "sha256": "930657337211844cb70c777fbaedfef1a7d86eaea20f16af4c5f68e20939b02e"
+    },
+    {
+      "path": "agent_passport/frameworks/bridge.py",
+      "sha256": "243ad1179b39972a55b44c1489d0af9b00932455ae92e763f4a7fea1122253b6"
+    },
+    {
+      "path": "agent_passport/frameworks/external.py",
+      "sha256": "f25863f0f7bbd293e440e3ddd55b5e264cd54578ae469ae3a591c4126f6c343c"
+    },
+    {
+      "path": "agent_passport/frameworks/langchain_adapter.py",
+      "sha256": "434e13ad88cf7be1b64f55449d3901e5d63e9449ba0096ee44c95ff3ce9b0f15"
+    },
+    {
+      "path": "agent_passport/frameworks/langchain_factory.py",
+      "sha256": "868ce0899db32a1b5e6ca89ee91c7ca03025c5545a85498bdef1ed8f0fa7d02e"
+    },
+    {
+      "path": "agent_passport/migration/__init__.py",
+      "sha256": "9c71db7d50e2032394209633be2c32e847e51e2d369efc27fa0aa7bf337bab76"
+    },
+    {
+      "path": "agent_passport/migration/framework_migration.py",
+      "sha256": "b083b145e830b23f73a7adecf2855708044a993d219d934dfd8f1e7678a76274"
+    },
+    {
+      "path": "agent_passport/migration/manifest.py",
+      "sha256": "dfc202bd9deadbebcd8858afb22c1f34e85e1cc0b074d43f9a5ed50a4885591d"
+    },
+    {
+      "path": "agent_passport/migration/runner.py",
+      "sha256": "bc78efd9ecc71c662ad18d0a1ac031956108755dabe621769c42e870f7eab8e8"
+    },
+    {
+      "path": "agent_passport/model/__init__.py",
+      "sha256": "4b3e1a7b49e2bcaefeec3aaa1ff8c3c2cf64ccf6bbc190ad748025f0be22bc1e"
+    },
+    {
+      "path": "agent_passport/model/base.py",
+      "sha256": "95c31a00767740a1338b1342660d4ae0befc7abaddb2d26efe014aa5c2eab29c"
+    },
+    {
+      "path": "agent_passport/model/contract.py",
+      "sha256": "c01357c578e79dffe3b22ec1718d11d7d2f1089b67cd095eb292bd6feb393335"
+    },
+    {
+      "path": "agent_passport/model/mock.py",
+      "sha256": "18bb830146098e0393e907724d2bca3c96d24e7a36800a20596a5b7d001ad8fa"
+    },
+    {
+      "path": "agent_passport/model/openai_compatible.py",
+      "sha256": "e5c3f8064633ea52f6b2c9dab827ee6fdc64589396f93f505bb29ecf680434a2"
+    },
+    {
+      "path": "agent_passport/negotiation.py",
+      "sha256": "50fe83bceff41628e5f89f627206a05ac85b997a6acbd28b0fbac1f5749273ff"
+    },
+    {
+      "path": "agent_passport/opengap/__init__.py",
+      "sha256": "b48b8a79a64fafc0159c4c5396dbb47d2057d96b1aa95919c7f2da037956e684"
+    },
+    {
+      "path": "agent_passport/opengap/checkpoints.py",
+      "sha256": "184b511ec95a2d27a36d756119a9680d4742137da11ae210afb2914b71047e6f"
+    },
+    {
+      "path": "agent_passport/opengap/exporter.py",
+      "sha256": "ae51f680356ea7eb72663bad17a5f699d0ed341ff7e579cd85d7b4e5ef2d435c"
+    },
+    {
+      "path": "agent_passport/opengap/schema.py",
+      "sha256": "523866c2a7a6fdb7b454999734ea3e0b8deab73e85831b994f38f45063761b22"
+    },
+    {
+      "path": "agent_passport/passport/__init__.py",
+      "sha256": "8dee1b4ca9251496b3490f0a831cba167ad9bb35bfd7a0bec82ea737f0853a24"
+    },
+    {
+      "path": "agent_passport/passport/evidence.py",
+      "sha256": "fcc8bd75456c6e656c216e534150500d811db5efce552c04e2d093aa52b3bd2e"
+    },
+    {
+      "path": "agent_passport/passport/fingerprint.py",
+      "sha256": "81eb3c4ba5f9d0e580a83af228df3e5730fe5128600f554eff4a9cb744481144"
+    },
+    {
+      "path": "agent_passport/passport/loader.py",
+      "sha256": "ead66070f0d757bafd21f0b354caba7c40faa336183fc26a340118069b75b6fa"
+    },
+    {
+      "path": "agent_passport/passport/report.py",
+      "sha256": "54ebf3ad70dff13868aed3dd57ac5bf882aaee5c7a564dab17b3efc8753bc1d3"
+    },
+    {
+      "path": "agent_passport/passport/schema.py",
+      "sha256": "02c0fab2ff39622cae1ea43c96820997f5ad9142c6ae1b88628064d28a87df7f"
+    },
+    {
+      "path": "agent_passport/passport/signing.py",
+      "sha256": "999643f8cfc2de53e71ad38636975a4a5fce5c75626fc15be95355f80eb8d3a8"
+    },
+    {
+      "path": "agent_passport/registry/__init__.py",
+      "sha256": "39eee508514f1c04cb3b5c7fd1f727caa4d8e477d2538346cdf8fe2bcb5f4c95"
+    },
+    {
+      "path": "agent_passport/registry/models.py",
+      "sha256": "462f659dbc4d2e37427d4e497ef9a9012a61ecd0880d69b91cff17bde1fb24e4"
+    },
+    {
+      "path": "agent_passport/registry/store.py",
+      "sha256": "b466aa5ca3f760f1a536a912dbf57e222de215f4de16cb20d38f5a1e1e5523a1"
+    },
+    {
+      "path": "agent_passport/security/__init__.py",
+      "sha256": "8ef996e5fee4628a12e0bef6055f732ce4cd21a99339cd903423792f10e0b0f8"
+    },
+    {
+      "path": "agent_passport/security/audit.py",
+      "sha256": "bdab1e74573ea84d4299eaf740bd34e1f1e432bd551de284e07e46e4d9627aac"
+    },
+    {
+      "path": "agent_passport/security/engine.py",
+      "sha256": "693d712fc755fca6622f7bc8bec973291f5597310abe0e85ed9740c6b7e22873"
+    },
+    {
+      "path": "agent_passport/security/hardening.py",
+      "sha256": "678ad15440b5dcd3addd75562993bdb3b7a81db5956e07d5f97e0a55f2b6e8be"
+    },
+    {
+      "path": "agent_passport/security/keystore.py",
+      "sha256": "940f0b125be6099593fe94df0116cda7002c08bf1c3676454b47d33a9a0f7fef"
+    },
+    {
+      "path": "agent_passport/security/policy.py",
+      "sha256": "af1a329c2ea20ee95aea8173144189d676dd35de207f4b0862b33a5263344209"
+    },
+    {
+      "path": "agent_passport/security/redteam.py",
+      "sha256": "0c4328d9121d1176641ccfd773acd6a7a3ef52f0408c8e918205b7e548d3f2ea"
+    },
+    {
+      "path": "agent_passport/security/sandbox.py",
+      "sha256": "05f8fa7a64143ec0a8065141a87c7e6cd5882f5c876845edaeff8d74fddd246e"
+    },
+    {
+      "path": "agent_passport/tools/__init__.py",
+      "sha256": "cd4e41c315afff0ddb73f91621660851f19efd08741dabcb65da22b22a994c69"
+    },
+    {
+      "path": "agent_passport/tools/contract.py",
+      "sha256": "517b8355cb954549c16b58e5d86e93c879513ed148d2b5ce6b04f0fadb42a238"
+    },
+    {
+      "path": "agent_passport/tools/registry.py",
+      "sha256": "624593e280fb9b518d07f3832361ed6767e2d8894ca063c633cd08c245190358"
+    },
+    {
+      "path": "agent_passport/tools/sandboxed_registry.py",
+      "sha256": "9eec4d0d88cc5f40b5959724f6c338c4be7299debe8b11c8f0f631ee53128967"
+    },
+    {
+      "path": "agent_passport/tools/secure_registry.py",
+      "sha256": "1a9a4c3e43df2186b98b1ef9a27c13ca017c983837a895a625230a166363868d"
+    },
+    {
+      "path": "agent_passport/travel.py",
+      "sha256": "8709fcac4c8c912508f3e9adaaf39b1722304a0f1694b38cda4b4ab00223f13c"
+    },
+    {
+      "path": "agent_passport/verification/__init__.py",
+      "sha256": "f03e530994a52a8cf8be275c69ea248b32eadfb70d50117762f52d0087025ae7"
+    },
+    {
+      "path": "agent_passport/verification/behavior_conformance.py",
+      "sha256": "614d444f7f60fca36dddc9d3b73c966ccb5a0faca4da96bd39f8db16f8fcb080"
+    },
+    {
+      "path": "agent_passport/verification/engine.py",
+      "sha256": "55a38440fa310cc0d547ba96559eb95e70a4d667456ee2d04a2de3552b1bbc05"
+    },
+    {
+      "path": "agent_passport/verification/model_checks.py",
+      "sha256": "13c7a1a4ba2ea821d79d2b6f21a1a5b46b2a2a5013ba5a01b13b45a32af4b1f7"
+    },
+    {
+      "path": "agent_passport/verification/portability.py",
+      "sha256": "894ba820c54b120d33dedf2c119ae671e1c4216e85a0668639eb5293d1b7f2b8"
+    },
+    {
+      "path": "agent_passport/verification/security_checks.py",
+      "sha256": "ba0aded236bf29add040173de034099bf70bb73bccdf5c69d958c4b2f8ad7611"
+    },
+    {
+      "path": "agent_passport/verification/tool_checks.py",
+      "sha256": "d0f55d9a08b491f16f3bddb3c5fec65864ca757396c698dfa734df72ae8728d6"
+    },
+    {
+      "path": "agent_passport/verification/validator.py",
+      "sha256": "094a0a08457f78a1cb7d9c72076f0b96a9336523738b625049b28831645c0a8d"
+    },
+    {
+      "path": "agent_passport/versioning.py",
+      "sha256": "0d49f850ae60a18beac35ee2c32a5f6d4bf5fa5e54942f2df31a6846c333b6e5"
+    },
+    {
+      "path": "agent_passport/visas/__init__.py",
+      "sha256": "e862aeb6d0f4fce54bf4cbc159b2667d8470ee8893dba3a7138757b1350a9e8d"
+    },
+    {
+      "path": "agent_passport/visas/adapters.py",
+      "sha256": "1090a0a43e00360a9eddb63b5e4c3d36f4aef9fa0268149c944d451350f13451"
+    },
+    {
+      "path": "agent_passport/visas/models.py",
+      "sha256": "650ad291d027b5145639e5089786f412b82ebe4e6ed0c106d21984e1d7888579"
+    },
+    {
+      "path": "agent_passport/visas/registry.py",
+      "sha256": "cb41cbdbf184c686794246106d82851914e65747e560eb28f2bc15766f7d0ccb"
+    },
+    {
+      "path": "day26-security-report.json",
+      "sha256": "38d302cf023ea6daed1fd8bef05a1ffb2678def786621bcf63184e36e5ab6e60"
+    },
+    {
+      "path": "demo.py",
+      "sha256": "7e8ddd3304047b9def7d616e9e0bf16d92eaf4f2de3037806e2e8bf89234d8c5"
+    },
+    {
+      "path": "docs/advanced-security.md",
+      "sha256": "7e37cbb16bcd891ce8a2035ae8146fd94c4ca360b3e4b4222b8a0106f8432767"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "f660ee9e79b31e296ffac72b74805d2c4f62936dba3a33e190785ad025988475"
+    },
+    {
+      "path": "docs/behavioral-conformance.md",
+      "sha256": "a3d0acb7b7476f3b3a36a1a5f0a4930e8ea8f920a91a2064ad722fe718f22b4c"
+    },
+    {
+      "path": "docs/capability-negotiation.md",
+      "sha256": "b191479ffb0079c3b116e5c5ff66b4ac80d576aed3644c306ef8b00163899b81"
+    },
+    {
+      "path": "docs/cybersecurity-hardening.md",
+      "sha256": "b2a822077e3908d6bb2dbf445427a4cdd56f2900c81f763dfc4c892633107bf1"
+    },
+    {
+      "path": "docs/dashboard.md",
+      "sha256": "5051f3742485c9262a9efd4fe1a12f3100bcf1ce9d59481eaa63abc91769d672"
+    },
+    {
+      "path": "docs/day11-evidence.txt",
+      "sha256": "ead7a6fd289be6762ab5266ed7f86da0d9224f2d80c20e2a6255b2798ffdd52c"
+    },
+    {
+      "path": "docs/day12-evidence.txt",
+      "sha256": "2d107e185d0637cddd67e0c86cee829310493cc92f07d285ab63133a82423ac1"
+    },
+    {
+      "path": "docs/day13-evidence.txt",
+      "sha256": "32c4891e6d6c87c8230653b6463f3eff040c6d57191a48139879a149ca76695c"
+    },
+    {
+      "path": "docs/day14-evidence.txt",
+      "sha256": "fb5fd67cda22a9345ae549e1e62e21f5eed71bf233068b0203683a7b9414cfed"
+    },
+    {
+      "path": "docs/day15-evidence.txt",
+      "sha256": "7e5ffb8930fe8c11a62ef3a657a32bd0651dafecbbd4532cbf1c9438907154be"
+    },
+    {
+      "path": "docs/day16-evidence.txt",
+      "sha256": "8b0b85cea2bb41907cb7e783545c08c5a8d817d04a6db23db36dad97cd28fed1"
+    },
+    {
+      "path": "docs/day17-evidence.txt",
+      "sha256": "f72c589a68b641cf5339c45c5d9727b2b955c517fd6913becad7f8895e16edc7"
+    },
+    {
+      "path": "docs/day18-evidence.txt",
+      "sha256": "2b20ba606dcfc14e281c364966be4c9b41998c8419961055d8e1fd8a0595f79c"
+    },
+    {
+      "path": "docs/day19-evidence.txt",
+      "sha256": "a6a5711697256db518ce2f5a01ef4ee5417c8b10d75b9d3783759e3cf91a2354"
+    },
+    {
+      "path": "docs/day20-evidence.txt",
+      "sha256": "1612a734efa2762f0a933174658ecdc3a6d23ac9be2d0f63898848c9ed961710"
+    },
+    {
+      "path": "docs/day21-evidence.txt",
+      "sha256": "ca93f8dab3775827be4f32177ad00e016858667d59ec976dbc80180c3de8b9da"
+    },
+    {
+      "path": "docs/day22-evidence.txt",
+      "sha256": "527cbddbb74c0524086c785d352b735ef20da45998e5d1e4ae889eefe2c70228"
+    },
+    {
+      "path": "docs/day25-final-release.md",
+      "sha256": "bf9382e8b56d94b98da6ebc8e5fee3961b1c50e9a66cf6b9ea2cb2a7e05ff6ce"
+    },
+    {
+      "path": "docs/day26-evidence.txt",
+      "sha256": "2022d3bd0853e6254a181aff61220917ce8f6400e191280003dff7bbf90f79ba"
+    },
+    {
+      "path": "docs/day27-key-management.md",
+      "sha256": "faba4e2606c41744d3863cb0722d104d04a8289ccdee59467cca971f2faad50c"
+    },
+    {
+      "path": "docs/day31-opengap-compatibility.md",
+      "sha256": "536668630d71d2a8118b5dce406a883c3aee919a06d0438fb40c878c2b146c15"
+    },
+    {
+      "path": "docs/day33-framework-visas.md",
+      "sha256": "e8af3ce332f316be9e2870b6de3be4c7c9f3cc558d3ae76c5c5bd907ce38cf6e"
+    },
+    {
+      "path": "docs/demo-script.md",
+      "sha256": "5a3262be6a8aaaecac941d32bfce73fcdd47d1c6c2c2a3785c2d4658aa101df0"
+    },
+    {
+      "path": "docs/multi-agent-delegation.md",
+      "sha256": "ed57d6722da790f69eb699e3f001499b53f95f841427e530a1dca9cbb2aeac9c"
+    },
+    {
+      "path": "docs/passport-spec.md",
+      "sha256": "7d294107649666afea71a2750e883af46a49768fe09f5d2adef8b3fa825ace02"
+    },
+    {
+      "path": "docs/passport-travel.md",
+      "sha256": "18e219e300d364de002826dc862dc034678edd2d9e164a6c3284a0c42f2dd09a"
+    },
+    {
+      "path": "docs/portable-tools.md",
+      "sha256": "e7c9646358174f152c19c9ad5e2ffeac8c0bb1e63f9e08c8d8cdd64cb4d2da61"
+    },
+    {
+      "path": "docs/registry.md",
+      "sha256": "04cd81132ed96c35ef1b74740f55dc6beeefaa249f2852ef57e5ee308687920d"
+    },
+    {
+      "path": "docs/sandboxing.md",
+      "sha256": "7334a777fb1c608f46e98b579842c39d3e21a6addd6bd42c740ea9f890fca674"
+    },
+    {
+      "path": "docs/security.md",
+      "sha256": "2322f6c3645c9aad87a90f15489a43a9a04196d326de460d19171a243e2d7317"
+    },
+    {
+      "path": "docs/verification-evidence.txt",
+      "sha256": "f6eda0bdb34cd064d1ebe988f7591c4386cf708c916c10371c6b73dced99260f"
+    },
+    {
+      "path": "docs/versioning.md",
+      "sha256": "b404a97cbf2f35ea85e178739b5ed25b8014a812d85f25560985ace2bb64f460"
+    },
+    {
+      "path": "docs_day29_red_team.md",
+      "sha256": "d4983173b35637a6e94931f2703b3c116fe9007014bdda40b346ff264b9c87f8"
+    },
+    {
+      "path": "docs_day32_checkpoints.md",
+      "sha256": "ebd87833467f4ad26a6167bf1fd6be28f2409b6b9bb8cc14afce27001a7812c2"
+    },
+    {
+      "path": "examples/basic_agent.py",
+      "sha256": "5951ba282bbc774c5f041d2591130d0f02d7556b71c38c1b1f6456dd400686fa"
+    },
+    {
+      "path": "examples/day11_signing.py",
+      "sha256": "54e65b0ac35168e82c6101678abb2df6c96a0407e914ab18ea8807511f8281f8"
+    },
+    {
+      "path": "examples/day12_registry.py",
+      "sha256": "6f051b25a06922ee85a38f0b4f1426cb4795663841345b84208b020c6ca6d2e1"
+    },
+    {
+      "path": "examples/day13_versioning.py",
+      "sha256": "92f865173e78a63f927d7087508c91982f8ac4e8cda0ce4333d48f9b6dae5ce7"
+    },
+    {
+      "path": "examples/day14_negotiation.py",
+      "sha256": "f2d599981242cdd2f7d8c0cc452fd02d8bc5f121a675911425fb609ac3c2ecfb"
+    },
+    {
+      "path": "examples/day15_tools.py",
+      "sha256": "fd6596f87095ef2f24f7d365607c2b65d49070d2230eb6a5abf037ff669c51c9"
+    },
+    {
+      "path": "examples/day16_security.py",
+      "sha256": "1fd4f3ea4b2ee3ed3e76dc1381cde0581822ba37fec3cbab0b96efb74c2e22ad"
+    },
+    {
+      "path": "examples/day17_conformance.py",
+      "sha256": "0a159de090d863affd9673263de3dace8ba538410bf89bda657cbfea42069593"
+    },
+    {
+      "path": "examples/day18_multi_agent.py",
+      "sha256": "1e0a8008ace309dea0b266dfbbfa02f02078c04e907270430ba413f718113f1a"
+    },
+    {
+      "path": "examples/day19_dashboard.py",
+      "sha256": "11bf9a7340f6cfefdbe0fedc4711a987294aeae045c91e97088aa8b90e35e7fa"
+    },
+    {
+      "path": "examples/day20_passport_travel.py",
+      "sha256": "8da05b3c8a5d3c80765f051b0b3e0ef2856d134194ecc816b7042bfeb01bbbc0"
+    },
+    {
+      "path": "examples/day22_evidence.py",
+      "sha256": "49683c3365cad6dc5bab9a7141bafbef42ea98dbad1cc2ee2772a53f10e1f4ba"
+    },
+    {
+      "path": "examples/day23_advanced_security.py",
+      "sha256": "9bb1a4ceb55039dca370add0c9ca18018913c1e01269c00c963a457d88249341"
+    },
+    {
+      "path": "examples/day24_registry.py",
+      "sha256": "c54f76af770c83c9d21412aaf3e7e693c1dbe81a4f28418c5936daeddcb6ca16"
+    },
+    {
+      "path": "examples/day26_cybersecurity.py",
+      "sha256": "2df2cda5dbf1c4c42c91512b0473eb51289dcaa0999bdd46b8931803cfa9ea1a"
+    },
+    {
+      "path": "examples/day27_key_management.py",
+      "sha256": "53f879850b7c41e996a13105033b31c895102a95ce6471bc51fb7932d28656d5"
+    },
+    {
+      "path": "examples/day28_sandbox.py",
+      "sha256": "9d040c8841724544254bd176e74a1d5d3994ffc2cf9eff659cad14c6b76833ce"
+    },
+    {
+      "path": "examples/day29_red_team.py",
+      "sha256": "308f6c19cd50b92291b95a2d48851f550c933485217843b29f33d854ef120f78"
+    },
+    {
+      "path": "examples/day2_demo.py",
+      "sha256": "5f788cdcd7de989ece32e7a7f8f3ef3d17e838e86e1325f479a8e7327c95cde5"
+    },
+    {
+      "path": "examples/day30_security_audit.py",
+      "sha256": "85453dc0bf2cd58f6d407f368ead5d6f98864cbdfbaff5cc1d73c717219580db"
+    },
+    {
+      "path": "examples/day31_opengap.py",
+      "sha256": "fb3804c5134a365c84be2d714bfa83b56c5b4415f2a4d787318714d71726a5d5"
+    },
+    {
+      "path": "examples/day32_checkpoints.py",
+      "sha256": "5f3fe4a750c16f14ec580baaab6bda2409a324822d538d67bf80005ed527b62b"
+    },
+    {
+      "path": "examples/day33_framework_visas.py",
+      "sha256": "7bfc501082c519291721a435807ae9f8818316ef62c7a67e4c9e6354b1ffe327"
+    },
+    {
+      "path": "examples/day3_demo.py",
+      "sha256": "e5fdf73cd61deb8e94d040b1a6f069a0f5a6f3e9029c3b5b6d2287a2988ad79b"
+    },
+    {
+      "path": "examples/day4_verification.py",
+      "sha256": "64564ff887191bf5f65665576569674aded39175bf698e5055875020ebbfe423"
+    },
+    {
+      "path": "examples/day5_model.py",
+      "sha256": "91a9a9dd40e463c7e296279a4babf980e1fa1b30153ef867a96f41baca32f013"
+    },
+    {
+      "path": "examples/day6_real_provider.py",
+      "sha256": "b4ff998c751cd8495e46a652bb728f355b6e9a95cd28734e295df2e1c1174836"
+    },
+    {
+      "path": "examples/day7_migration.py",
+      "sha256": "ef92bd4501ee20cd285acc5d66424d90c3fc3210f2d8dc6d393d765e02578581"
+    },
+    {
+      "path": "examples/day8_framework.py",
+      "sha256": "9915189fab068c1748068aa708bcf17923ca162d8086acc9f60004a789fdbb5f"
+    },
+    {
+      "path": "examples/day9_end_to_end.py",
+      "sha256": "0ced1f467b613a3c209729de8d423ad82552c96f273e7d5463ec7f2a0f2fd140"
+    },
+    {
+      "path": "examples/final_release_check.py",
+      "sha256": "16627b41940472b32473c6776e3587a6f6262685c7aa39430b1132ef3e6251c2"
+    },
+    {
+      "path": "final-release-report.json",
+      "sha256": "05d01dbca61c518ebb31448643dbc57531f07afd85e1c4e5fd5dfc897ad8a9ca"
+    },
+    {
+      "path": "framework-visa-report.json",
+      "sha256": "23e9a933e9e75db368b686f16cd786a2b4280701345712abbea03c30283a6e5d"
+    },
+    {
+      "path": "opengap-checkpoint-report.json",
+      "sha256": "3f2d76a91631a391dc7734d8324f2326f713a17fd9655a3e8873085a2d634c07"
+    },
+    {
+      "path": "passport-travel-evidence-signed.json",
+      "sha256": "db4716b4be4fc4482f3f304efed837292660d9be70bc74f299212fe57f744b98"
+    },
+    {
+      "path": "passport-travel-evidence.json",
+      "sha256": "d8710b8c40b09f6de5a1d4125b52f0014a796bf069b6453fbf973a3a8dbeb38d"
+    },
+    {
+      "path": "passport.yaml",
+      "sha256": "2e500caeb957315886f09c33868cbe05310074ed8a1106838eb00a85045e27a1"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "f6d03406f78875b22df1cc03eeef88cc4c188922ee8a2eeec731860e8e1d5ed2"
+    },
+    {
+      "path": "red-team-report.json",
+      "sha256": "260651689b76a4eda48da50072f58ce088f40bf8f6d7974a72f8b1523c0e1b02"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "3a2844d836fbef2310ee012a927ba12dab421fb2fe8395a45c30340f37beb8c4"
+    },
+    {
+      "path": "security-audit-report.json",
+      "sha256": "be96d454fd120ac428b2cf6a949b5858f6aee0e5159c36bd45f1e8dc8bc60c77"
+    },
+    {
+      "path": "tests/opengap/test_checkpoints.py",
+      "sha256": "19deb9268fe3fccdd087e4fa3afc28ab596dda75ba97c3156b1588be4ccb2f47"
+    },
+    {
+      "path": "tests/opengap/test_compatibility.py",
+      "sha256": "a49b964ad69e0e50a89d0f804bd0e9347aa2e4ca303187987ef4b5fe504c05f8"
+    },
+    {
+      "path": "tests/opengap/test_day34_security_docs.py",
+      "sha256": "56237278006b3fe82962c7bb21045e37e694be18e3c24da9ba0def09659000d4"
+    },
+    {
+      "path": "tests/opengap/test_visas.py",
+      "sha256": "b2d35fe48c4fc00c95c492564f1784e7d59c9b4bd4a1b3ab0f2ef923a2ac87b7"
+    },
+    {
+      "path": "tests/test_agent_day2.py",
+      "sha256": "e4b0d5d25ad0a2487f933bd0bd6ab456de863a6620baa9f60ffa0833ec5af3ab"
+    },
+    {
+      "path": "tests/test_conformance.py",
+      "sha256": "393d0bebe31744c214290bfdfa1c1a7f3c15c244672e38dd5b30d98f497ef9e1"
+    },
+    {
+      "path": "tests/test_dashboard.py",
+      "sha256": "7b6eb23516c145ff754a2df6c5991cce492f06fd08e4ec295f0b058a5f9b8c7a"
+    },
+    {
+      "path": "tests/test_day6_provider.py",
+      "sha256": "e056e6d878923662ed19510bc0f8881c4cb3eacc05a1ff6615605a0452120598"
+    },
+    {
+      "path": "tests/test_delegation.py",
+      "sha256": "46e10e687271455996d5642c289bce2f37540b46febc94a2176e06ce5bbaa6d4"
+    },
+    {
+      "path": "tests/test_delegation_security.py",
+      "sha256": "0a655589b6a5a9c23d41c02bc0ba2d9975af74a4f765d7c21851eb1dff64c101"
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "sha256": "26f53f17a7a505aee9f8a3eb102efb2aa57edfa017b4e550abbc8df4d2676fc2"
+    },
+    {
+      "path": "tests/test_external_framework.py",
+      "sha256": "40ee47f927b85a91fec8cc8c92acfa9b973050e375ebeaee0c288130161b1f72"
+    },
+    {
+      "path": "tests/test_keystore.py",
+      "sha256": "534629409eee684a1a1c51002967556efe7d743047c5ede5c0fffc4be29ba762"
+    },
+    {
+      "path": "tests/test_langchain_adapter.py",
+      "sha256": "a81f6266047ce37648872b7006e046fb853eec1519b71f1dc519352dd38ab875"
+    },
+    {
+      "path": "tests/test_migration.py",
+      "sha256": "84ee3aa1b8a4c2c2e0cc559a576cced77b6ae4bf281c2bcaa48f5b82081cf692"
+    },
+    {
+      "path": "tests/test_model_provider.py",
+      "sha256": "b99c2110866f0101d9ce6a97558ca6120bf746f6f47e06f0018c6ec9cba58690"
+    },
+    {
+      "path": "tests/test_negotiation.py",
+      "sha256": "60df30908fe1553c13cd97c5c05b36c83b111cebd0d4163c2d9f74e68d646b8b"
+    },
+    {
+      "path": "tests/test_passport.py",
+      "sha256": "be09755fa6225815d81f0c8b3031671441a272707f96408126f514f0c3cedf17"
+    },
+    {
+      "path": "tests/test_passport_day3.py",
+      "sha256": "3a15413ccc0551aac8f1f614ff2454d89a873c51fcc4b1569d6bf1a3b4e35b79"
+    },
+    {
+      "path": "tests/test_passport_model.py",
+      "sha256": "82a624386b108c971b1ec9a813751c19121a7751bb3b3e2c5dbda40813672598"
+    },
+    {
+      "path": "tests/test_redteam.py",
+      "sha256": "ed98c6896a73f5c77da7cd68e39c2ad45be5d7442f90c8737252dd182b367545"
+    },
+    {
+      "path": "tests/test_registry.py",
+      "sha256": "ce6d2eaa91ee551b01a1d911eca47aa25e222be8a971f37f8cb227c33203f0b7"
+    },
+    {
+      "path": "tests/test_registry_day24.py",
+      "sha256": "d23b879010197e43054799de5d348d8355abd66dfceb84f017f4a4b5e65c0150"
+    },
+    {
+      "path": "tests/test_security.py",
+      "sha256": "50ecface574bb3b4a9a1aa84e856bc18423a138c204d2c798c018b4e11a5c1ff"
+    },
+    {
+      "path": "tests/test_security_audit.py",
+      "sha256": "b65aca3ffb652ebb062e9cf00e60b7f1c2e6e6992612e3512adea61a01c06505"
+    },
+    {
+      "path": "tests/test_security_hardening.py",
+      "sha256": "1cc697cd7052d9837cd349844623ac8bf182c3526aaccfee9f86d0af3c9840cc"
+    },
+    {
+      "path": "tests/test_signing.py",
+      "sha256": "1ab4f832d658b29315a6e6c5a54dece7b58844c2cb065e75d5c27c9cd710739f"
+    },
+    {
+      "path": "tests/test_tool_sandbox.py",
+      "sha256": "692dc5f8f5e778574bd729f28e4527418373341b6af44cd671eaeafe4e1bacb1"
+    },
+    {
+      "path": "tests/test_tools_portable.py",
+      "sha256": "c289303cdd0c7a54cbacf4c3e3264638397db94604bea52bdc9a38c7e35bdf41"
+    },
+    {
+      "path": "tests/test_travel.py",
+      "sha256": "c7a9853730e1f1db5ae93ed0f2dd3e3fb65795b0022cba90b23234d38bdce48a"
+    },
+    {
+      "path": "tests/test_verification_engine.py",
+      "sha256": "8b8e90c7980a627cc6e7341b318e636b8c90d3a4f06fd3fdbd411869809fe6c8"
+    },
+    {
+      "path": "tests/test_versioning.py",
+      "sha256": "9378ce8d22036215d75ebb9e7cfa31fd58dcf5c0e986f26e0a19e820beae1a71"
+    }
+  ]
+}

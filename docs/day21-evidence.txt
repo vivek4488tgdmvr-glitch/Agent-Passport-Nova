@@ -1,0 +1,30 @@
+DAY 21 — LANGCHAIN ADAPTER TEST REPAIR
+=======================================
+
+Goal
+----
+Eliminate the silent skipped LangChain factory test while keeping the real
+LangChain dependency optional for the core library.
+
+What changed
+------------
+1. Removed pytest.importorskip() from the factory-contract test.
+2. The test now injects a tiny RunnableLambda-compatible test double at the
+   import boundary and exercises the real Agent Passport factory code.
+3. The adapter contract, invalid-runnable rejection, factory behavior, and
+   migration contract are all executed on every test run.
+4. pyproject.toml already exposes the real integration as the `langchain`
+   optional extra: `langchain-core>=1.0,<2.0`.
+5. A real LangChain smoke test remains an environment-level check when
+   langchain-core is installed; the mandatory suite no longer hides coverage
+   behind a skip.
+
+Verification
+------------
+Expected mandatory suite result: 90 passed, 0 skipped.
+
+Trust boundary
+--------------
+The test double verifies Agent Passport's integration boundary and factory
+behavior. It does NOT claim that the external langchain-core package itself
+was installed or runtime-verified in an offline build environment.

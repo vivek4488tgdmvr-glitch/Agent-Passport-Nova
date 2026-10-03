@@ -1,0 +1,78 @@
+{
+  "release": "Agent Passport Day 30 \u2014 Hardened Security Release",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "full test suite",
+      "command": "/opt/pyvenv/bin/python -m pytest -q",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "........................................................................ [ 50%]\n........................................................................ [100%]\n=============================== warnings summary ===============================\ntests/test_redteam.py::test_safe_red_team_suite_passes_all_probes\ntests/test_redteam.py::test_red_team_report_is_serializable\ntests/test_security_audit.py::test_security_audit_structure\ntests/test_security_audit.py::test_security_audit_is_serializable\ntests/test_tool_sandbox.py::test_sandbox_executes_authorized_tool_in_child\ntests/test_tool_sandbox.py::test_sandbox_kills_timed_out_handler\ntests/test_tool_sandbox.py::test_sandbox_truncates_large_text_output\ntests/test_tool_sandbox.py::test_sandboxed_registry_enforces_tool_permissions_and_binding\n  /usr/lib/python3.13/multiprocessing/popen_fork.py:67: DeprecationWarning: This process (pid=10175) is multi-threaded, use of fork() may lead to deadlocks in the child.\n    self.pid = os.fork()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n144 passed, 8 warnings in 2.96s\n",
+      "stderr": ""
+    },
+    {
+      "name": "passport travel",
+      "command": "/opt/pyvenv/bin/python examples/day20_passport_travel.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "=== DAY 20: PASSPORT TRAVEL ===\n\nAGENT PASSPORT \u2014 TRAVEL EVIDENCE\n=================================\nFINAL STATUS: PASS\nSteps: 10/10 passed\n\n01. \u2713 AGENT IDENTITY \u2014 Nova v1.0.0 (nova)\n02. \u2713 PASSPORT TRUST \u2014 signed Passport + active registry baseline available\n03. \u2713 CAPABILITY NEGOTIATION \u2014 target runtime satisfies Passport requirements\n04. \u2713 PORTABLE TOOL CONTRACT \u2014 calculator contract verified across runtime binding\n05. \u2713 SECURITY POLICY \u2014 safe action allowed; shell execution denied\n06. \u2713 BEHAVIORAL CONFORMANCE \u2014 2/2 cases passed\n07. \u2713 MULTI-AGENT DELEGATION \u2014 Scout accepted only the requested web_search scope\n08. \u2713 RUNTIME MIGRATION \u2014 identity preserved after portable-host transfer\n09. \u2713 POST-MIGRATION VERIFICATION \u2014 behavior remains conformant after transfer\n10. \u2713 PASSPORT TRAVEL \u2014 agent completed the complete trust pipeline\n\nEvidence file: passport-travel-evidence.json\n\nPASSPORT TRAVEL \u2713\n",
+      "stderr": ""
+    },
+    {
+      "name": "cryptographic evidence",
+      "command": "/opt/pyvenv/bin/python examples/day22_evidence.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "=== DAY 22: CRYPTOGRAPHIC EVIDENCE ===\nPassport fingerprint: f97fa6b262efaef5e10a33c24bf210c51877ca5ad26e9a157151eb656bf0ba41\nEvidence hash: 1c0ef5e3a74b72121222af7081f4321d3f8e89211b36983541bbcd64c4cb1935\nSigned evidence: PASS \u2713\nTamper detection: True \u2713\nEvidence file: passport-travel-evidence-signed.json\nCRYPTOGRAPHIC EVIDENCE \u2713\n",
+      "stderr": ""
+    },
+    {
+      "name": "advanced security",
+      "command": "/opt/pyvenv/bin/python examples/day23_advanced_security.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "=== DAY 23: ADVANCED SECURITY ===\nToken issued: PASS \u2713 (9ac13eeb567f4510921d9df3a6df248b)\nFirst use: PASS \u2713\nReplay protection: PASS \u2713\nPermission escalation blocked: PASS \u2713\nExpiration enforcement: PASS \u2713\nAudit events: 5\nADVANCED SECURITY \u2713\n",
+      "stderr": ""
+    },
+    {
+      "name": "production registry",
+      "command": "/opt/pyvenv/bin/python examples/day24_registry.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "=== DAY 24: PRODUCTION-STYLE REGISTRY ===\nPublished: ap_f3f08665cabaf435fbdc4a2b \u2713\nVersions: ['1.2.0']\nLatest: 1.2.0 \u2713\nSigned retrieval: PASS \u2713\nRevocation: FAIL \u2713\nREGISTRY TRUST PIPELINE \u2713\n{\n  \"status\": \"PASS\",\n  \"passport_id\": \"ap_f3f08665cabaf435fbdc4a2b\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "secure key management",
+      "command": "/opt/pyvenv/bin/python examples/day27_key_management.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "=== DAY 27: SECURE KEY MANAGEMENT ===\nEncrypted keystore: nova.keystore.json \u2713\nPrivate key exposed on disk: False PASS \u2713\nPublic key available: True \u2713\nWrong password rejected: PASS \u2713\nKey rotation: PASS \u2713 (B6cMeM8V57l5 \u2192 R0dhv0R5Gl54)\nSECURE KEY MANAGEMENT \u2713\n",
+      "stderr": ""
+    },
+    {
+      "name": "safe red-team suite",
+      "command": "/opt/pyvenv/bin/python examples/day29_red_team.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "\n=== DAY 29: SAFE RED-TEAM SECURITY TEST ===\n\nAGENT PASSPORT \u2014 SAFE RED-TEAM REPORT\n==========================================\n\u2713 Malformed principal: path-like identity rejected\n\u2713 Oversized request: request-size limit enforced\n\u2713 Rate-limit flood: third request blocked\n\u2713 Replay request: duplicate nonce rejected\n\u2713 Privilege escalation: denied permission overrides allowed permission\n\u2713 Credential leakage: credential fields redacted\n\u2713 Audit integrity: hash chain verifies and secrets are absent\n\u2713 Audit tampering: modified historical event detected\n\u2713 Sandbox timeout: runaway handler terminated\n\u2713 Unauthorized tool: tool blocked before handler execution\n\u2713 Evidence chain: red-team result can be backed by a valid audit chain\nRESULT: 11/11 probes passed \u2014 PASS\n\nEvidence: red-team-report.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "final cybersecurity audit",
+      "command": "/opt/pyvenv/bin/python examples/day30_security_audit.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "=== DAY 30: FINAL CYBERSECURITY AUDIT ===\n\u2713 Full test suite with zero skips: 144 passed, 8 warnings in 2.87s\n\u2713 Safe red-team suite: 11/11 local probes passed\n\u2713 Encrypted key-management module: encrypted keystore implementation present\n\u2713 Sandbox enforcement module: isolated tool execution controls present\n\u2713 Security hardening module: request validation, rate limiting, replay protection and audit chain present\n\u2713 Signed evidence verification: signed evidence verification: PASS\n\u2713 No private-key material in release tree: no private-key material files found\n\u2713 No high-confidence live secrets in application/config: no high-confidence live-secret patterns found in application/config files\n\u2713 Cryptography dependency declared: cryptography security extra declared\n\u2713 Release artifacts present: all release artifacts present\n\nSECURITY AUDIT: 10/10 checks passed \u2014 PASS\nReport: security-audit-report.json\n",
+      "stderr": ""
+    }
+  ],
+  "artifacts": [
+    "passport.yaml",
+    "passport-travel-evidence.json",
+    "passport-travel-evidence-signed.json",
+    "SUBMISSION_CHECKLIST.md",
+    "SECURITY_AUDIT.md",
+    "security-audit-report.json"
+  ]
+}

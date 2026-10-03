@@ -1,0 +1,32 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 84%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                            [100%][0m
+[32m[32m[1m84 passed[0m, [33m1 skipped[0m[32m in 0.46s[0m[0m
+
+MULTI-AGENT DEMO
+=== DAY 18: MULTI-AGENT PASSPORTS ===
+
+[1] Valid delegation
+DELEGATION CHECK
+----------------
+Status: ALLOWED
+Requester: nova
+Target: scout
+Reason: target satisfies the requested delegation scope
+✓ DELEGATION ALLOWED
+Scoped token: {'requester_id': 'nova', 'target_id': 'scout', 'capabilities': ['web_search'], 'tools': ['web_search'], 'purpose': 'find current information', 'max_uses': 1}
+
+[2] Out-of-scope delegation
+DELEGATION CHECK
+----------------
+Status: DENIED
+Requester: nova
+Target: scout
+Missing capabilities: shell_execution
+Reason: target cannot satisfy the requested scope
+✓ DELEGATION BLOCKED
+
+Agent identity ✓
+Capability matching ✓
+Tool scope matching ✓
+Explicit delegation scope ✓

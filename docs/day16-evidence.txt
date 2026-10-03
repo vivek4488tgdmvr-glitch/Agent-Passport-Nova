@@ -1,0 +1,34 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m      [100%][0m
+[32m[32m[1m66 passed[0m, [33m1 skipped[0m[32m in 0.42s[0m[0m
+
+SECURITY DEMO
+=== DAY 16: SECURITY & PERMISSIONS ===
+
+Policy: {'allow': ['network'], 'deny': ['filesystem_write', 'shell']}
+Policy validation: PASS ✓
+
+[1] Network request
+SECURITY POLICY CHECK
+---------------------
+Decision: ALLOW
+Requested: network
+✓ ALLOWED
+
+[2] Shell request
+SECURITY POLICY CHECK
+---------------------
+Decision: DENY
+Requested: shell
+Missing allow: shell
+Explicitly denied: shell
+✗ DENIED
+
+[3] Secure tool invocation
+{'query': 'agent passport'}
+✓ TOOL EXECUTED AFTER POLICY CHECK
+✓ DANGEROUS TOOL BLOCKED BEFORE EXECUTION
+
+Security boundary ✓
+Tool permissions checked before execution ✓
+Deny takes precedence ✓

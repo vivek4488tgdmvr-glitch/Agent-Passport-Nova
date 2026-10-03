@@ -1,0 +1,41 @@
+spec: "0.1.0"
+agent:
+  id: "nova"
+  name: "Nova"
+  version: "1.0.0"
+  description: "A portable research-oriented AI agent with verifiable identity, behavior, tools, migration, and security controls."
+capabilities:
+  - reasoning
+  - structured_output
+  - tool_use
+behavior:
+  input:
+    type: "text"
+  output:
+    type: "json"
+tools:
+  - name: "multiply"
+    description: "Multiplies two integers."
+    input_schema:
+      type: "object"
+      properties:
+        a:
+          type: "integer"
+        b:
+          type: "integer"
+      required:
+        - "a"
+        - "b"
+    output_type: "integer"
+frameworks:
+  targets:
+    - "openai-sdk"
+    - "crewai"
+    - "claude-code"
+    - "lyzr"
+security:
+  signed_identity: true
+  least_privilege: true
+  sandboxed_tools: true
+  replay_protection: true
+  audit_logging: true

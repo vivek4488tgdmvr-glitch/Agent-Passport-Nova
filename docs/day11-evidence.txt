@@ -1,0 +1,12 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                   [100%][0m
+[32m[32m[1m37 passed[0m, [33m1 skipped[0m[32m in 0.39s[0m[0m
+
+SIGNING DEMO
+=== DAY 11: SIGNED PASSPORT ===
+Algorithm: Ed25519
+Issuer: demo-issuer
+Content SHA-256: 97f9d3a9cc616a2b06479369...
+
+Original Passport: PASS ✓
+Tampered Passport: FAIL ✓

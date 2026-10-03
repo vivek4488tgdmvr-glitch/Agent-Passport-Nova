@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "total_steps": 10,
+  "passed": 10,
+  "failed": 0,
+  "steps": [
+    {
+      "step": "AGENT IDENTITY",
+      "status": "PASS",
+      "detail": "Nova v1.0.0 (nova)"
+    },
+    {
+      "step": "PASSPORT TRUST",
+      "status": "PASS",
+      "detail": "signed Passport + active registry baseline available"
+    },
+    {
+      "step": "CAPABILITY NEGOTIATION",
+      "status": "PASS",
+      "detail": "target runtime satisfies Passport requirements"
+    },
+    {
+      "step": "PORTABLE TOOL CONTRACT",
+      "status": "PASS",
+      "detail": "calculator contract verified across runtime binding"
+    },
+    {
+      "step": "SECURITY POLICY",
+      "status": "PASS",
+      "detail": "safe action allowed; shell execution denied"
+    },
+    {
+      "step": "BEHAVIORAL CONFORMANCE",
+      "status": "PASS",
+      "detail": "2/2 cases passed"
+    },
+    {
+      "step": "MULTI-AGENT DELEGATION",
+      "status": "PASS",
+      "detail": "Scout accepted only the requested web_search scope"
+    },
+    {
+      "step": "RUNTIME MIGRATION",
+      "status": "PASS",
+      "detail": "identity preserved after portable-host transfer"
+    },
+    {
+      "step": "POST-MIGRATION VERIFICATION",
+      "status": "PASS",
+      "detail": "behavior remains conformant after transfer"
+    },
+    {
+      "step": "PASSPORT TRAVEL",
+      "status": "PASS",
+      "detail": "agent completed the complete trust pipeline"
+    }
+  ],
+  "cryptographic_evidence": {
+    "algorithm": "Ed25519",
+    "issuer": "demo-issuer",
+    "passport_fingerprint": "63ca13059a4a4aa0a8c9cf24105058442b10c3bd97abe2c0a141fccf084ce0dd",
+    "evidence_sha256": "4bc2d54ae58c8601416eb5f61794f44633ac925864b806bfeac15160fb75fd0c",
+    "public_key": "fuo4wejXY3VM/oMjhCm1BQO7R/4QOAAhIN9ZXcYZRWc=",
+    "signature": "b8pQIdrfLWw8pBcITYBDn0xeIl+u0UeYxW4+egpsQW6rGipO5FO6kk+ZQshHX9/yf66sZvBRMVCdOniMZAGSCw=="
+  }
+}

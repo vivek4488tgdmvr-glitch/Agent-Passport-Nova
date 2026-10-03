@@ -1,0 +1,15 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                               [100%][0m
+[32m[32m[1m41 passed[0m, [33m1 skipped[0m[32m in 0.42s[0m[0m
+
+REGISTRY DEMO
+=== DAY 12: PASSPORT REGISTRY ===
+Registered: ap_f97fa6b262efaef5e10a33c2
+Agent: nova v1.0.0
+Fingerprint: f97fa6b262efaef5e10a33c2...
+
+Registry lookup:
+  ✓ nova v1.0.0 [active]
+
+Verification: PASS ✓
+After revocation: FAIL ✓

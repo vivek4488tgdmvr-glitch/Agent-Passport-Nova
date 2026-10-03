@@ -1,0 +1,18 @@
+PYTEST
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                      [100%][0m
+[32m[32m[1m34 passed[0m, [33m1 skipped[0m[32m in 0.25s[0m[0m
+
+DEMO
+
+=== AGENT PASSPORT DEMO ===
+Agent: Nova v1.0.0
+Passport fingerprint: f97fa6b262efaef5...
+
+Baseline verification: PASS
+
+Framework integration: optional
+LangChain integration requires: pip install langchain-core
+Core Passport verification remains available.
+
+=== RESULT ===
+PASSPORT VERIFIED ✓

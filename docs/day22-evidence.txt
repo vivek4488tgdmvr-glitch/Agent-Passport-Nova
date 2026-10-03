@@ -1,0 +1,19 @@
+DAY 22 — CRYPTOGRAPHIC EVIDENCE
+
+Passport Travel evidence is now an independently verifiable artifact.
+
+Evidence is canonicalized and SHA-256 hashed, then signed with Ed25519.
+The signed envelope records the Passport fingerprint, issuer, public key,
+and signature. Verification checks the evidence hash, Ed25519 signature,
+and the expected Passport fingerprint.
+
+This creates an explicit trust link:
+Passport -> fingerprint -> Travel evidence -> signature -> verification
+
+The evidence signature does not establish issuer trust by itself. Trust in
+an issuer/key remains an external policy decision, just as with Passport
+signatures.
+
+CLI:
+  agent-passport sign-evidence evidence.json passport.yaml PRIVATE_KEY ISSUER signed.json
+  agent-passport verify-evidence signed.json passport.yaml
